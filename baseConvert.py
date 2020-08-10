@@ -14,7 +14,8 @@ def base_converter(decimalNum, base):
         reminder = decimalNum % base
         decimalNum = decimalNum // base
         result.append(DIGITS[reminder])
-        result.reverse()
+
+    result.reverse()
 
     for v in result:
         digit = digit + v
@@ -29,8 +30,9 @@ if __name__ == '__main__':
     HEX = 16
 
     # decimal to hex
-    a = base_converter(-2, BIN)
+    a = base_converter(17, BIN)
     print(a)
+    print(bin(17))
 
     # convert binary to decimal
     b = '0b1010'
